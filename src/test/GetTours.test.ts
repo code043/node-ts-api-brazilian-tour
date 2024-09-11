@@ -1,5 +1,5 @@
-import GetTours from "../GetTours";
-import TourRepositoryInMemory from "../TourRepositoryInMemory";
+import GetTours from "../application/usecases/GetTours";
+import TourRepositoryInMemory from "../infra/repositories/TourRepositoryInMemory";
 
 test("should get name of tour", async () => {
   const tourRepositoryInMemory = new TourRepositoryInMemory();

@@ -1,4 +1,4 @@
-import TourRepositoryInMemory from "./TourRepositoryInMemory";
+import TourRepositoryInMemory from "../../infra/repositories/TourRepositoryInMemory";
 
 export default class GetTours {
   constructor(readonly tourRepositoryInMemory: TourRepositoryInMemory) {}
