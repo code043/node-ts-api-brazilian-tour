@@ -5,8 +5,8 @@ import TourRepositoryDatabase from "../../infra/repositories/TourRepositoryDatab
 //import // from "../usecases/GetTours"
 
 const getTours = async (req: Request, res: Response) => {
-  const databaseUsecase = new TourRepositoryDatabase();
-  const tourUsecase = new GetTours(databaseUsecase);
+  const database = new TourRepositoryInMemory();
+  const tourUsecase = new GetTours(database);
   const tour = await tourUsecase.execute();
   res.json(tour);
 };

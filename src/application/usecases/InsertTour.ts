@@ -1,15 +1,14 @@
 import TourRepositoryDatabase from "../../infra/repositories/TourRepositoryDatabase";
 import TourRepositoryInMemory from "../../infra/repositories/TourRepositoryInMemory";
 
-export default class GetTours {
+export default class InserTours {
   constructor(readonly tourRepository: TourRepositoryInMemory) {}
 
-  async execute(): Promise<Output[]> {
-    return this.tourRepository.getTours();
+  async execute(input: Input): Promise<void> {
+    this.tourRepository.insertTour(input);
   }
 }
-
-type Output = {
+type Input = {
   id: number;
   name: string;
   info: string;
