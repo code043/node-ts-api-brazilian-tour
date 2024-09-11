@@ -5,7 +5,7 @@ import { TourData } from "../../types/TourType";
 
 const prisma = new PrismaClient();
 
-export default class TourRepositoryDatabase implements TourRepository {
+class TourRepositoryDatabase implements TourRepository {
   getTourById(): Promise<Tour> {
     throw new Error("Method not implemented.");
   }
@@ -24,3 +24,4 @@ export default class TourRepositoryDatabase implements TourRepository {
     return tours;
   }
 }
+export const TourDatabase = new TourRepositoryDatabase();
