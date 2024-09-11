@@ -1,4 +1,3 @@
-import { TourData } from "../../types/TourType";
 import { Tour } from "../entities/Tour";
 
 export default interface TourRepository {

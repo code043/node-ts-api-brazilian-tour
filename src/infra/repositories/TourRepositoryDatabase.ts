@@ -5,14 +5,9 @@ import { TourData } from "../../types/TourType";
 
 const prisma = new PrismaClient();
 
-class TourRepositoryDatabase implements TourRepository {
-  async getTourById(tourId: number): Promise<Tour> {
-    const tour = await prisma.tour.findUnique({
-      where: {
-        id: tourId,
-      },
-    });
-    return tour;
+export default class TourRepositoryDatabase implements TourRepository {
+  getTourById(): Promise<Tour> {
+    throw new Error("Method not implemented.");
   }
   async insertTour(tour: TourData): Promise<void> {
     await prisma.tour.create({
@@ -29,5 +24,3 @@ class TourRepositoryDatabase implements TourRepository {
     return tours;
   }
 }
-
-export const TourDatabase = new TourRepositoryDatabase();
