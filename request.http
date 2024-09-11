@@ -1,0 +1,142 @@
+
+get http://localhost:3000/tours
+
+###
+
+post http://localhost:3000/tours
+Content-Type: application/json
+
+{
+    
+    "name": "Ubatuba (SÃO PAULO)",
+    "info": "Ubatuba, no litoral norte paulista, é conhecida por suas praias paradisíacas e limpas. O local é referência quando o assunto são águas cristalinas e esverdeadas, perfeitas para quem quer fugir do caos de São Paulo. Acontece que a cidade vai muito além de praias bonitas. Passeios, trilhas e cachoeiras também merecem destaque. Uma das praias preferidas dos surfistas e amantes de mar com ondas, a Praia Vermelha do Norte é considerada uma das mais bonitas de Ubatuba. O local é de fácil acesso pela Rio-Santos e possui alguns quiosques e boa infraestrutura. Para quem quer surfar ou simplesmente conhecer uma praia linda, a visita vale a pena.",
+    "image": "http://localhost:3000/images/ubatuba.webp"
+  },
+
+###
+
+post http://localhost:3000/group-tours
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "name": "Ubatuba (SÃO PAULO)",
+    "info": "Ubatuba, no litoral norte paulista, é conhecida por suas praias paradisíacas e limpas. O local é referência quando o assunto são águas cristalinas e esverdeadas, perfeitas para quem quer fugir do caos de São Paulo. Acontece que a cidade vai muito além de praias bonitas. Passeios, trilhas e cachoeiras também merecem destaque. Uma das praias preferidas dos surfistas e amantes de mar com ondas, a Praia Vermelha do Norte é considerada uma das mais bonitas de Ubatuba. O local é de fácil acesso pela Rio-Santos e possui alguns quiosques e boa infraestrutura. Para quem quer surfar ou simplesmente conhecer uma praia linda, a visita vale a pena.",
+    "image": "./ubatuba.webp"
+  },
+  {
+    "id": 2,
+    "name": "Pão de Açucar (RIO DE JANEIRO)",
+    "info": "Os cariocas – nativos ou por opção – sabem bem: há algumas coisas que todo mundo deve fazer na Cidade Maravilhosa, pelo menos uma vez na vida. Um dos mais famosos cartões-postais da Cidade, o Pão de Açúcar tem uma vista de 360°, contemplando diversas praias e até a vizinha Niteroi. O caminho, de bondinho - todo envidraçado -, é feito em duas etapas: primeiro até o Morro da Urca, depois até lá. No destino final, há bares, restaurantes e lojas de souvenires.",
+    "image": "./pao-de-acucar.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Inhotim (BELO HORIZONTE)",
+    "info": "Inhotim é um daqueles lugares que todo mundo precisa conhecer antes de morrer. Idealizado em meados da década de 1980, transformou-se com o tempo, tornando-se um lugar singular, com um dos mais relevantes acervos de arte contemporânea do mundo e uma coleção botânica que reúne espécies raras e de todos os continentes. A visita a Inhotim é indescritível. Algumas pessoas podem até pensar que já firam algo parecido, mas, com certeza, não viram. Lá, somos tocados por absolutamente tudo que vemos, por diferentes sentidos. ",
+    "image": "./inhotim.webp"
+  },
+  {
+    "id": 4,
+    "name": "Centro Histórico de Paraty (RIO DE JANEIRO)",
+    "info": "A cidade de Paraty, no Estado do Rio de Janeiro, é um incrível destino de férias ou até mesmo de final de semana. Além de suas belíssimas praias, o local possui muitas trilhas, passeios históricos e lugares únicos. Percorrer suas vielas de paralelepípedos é como voltar no tempo: casinhas coloridas, feirinhas de artesanatos e muitos restaurantes charmosos. Como se não bastasse tantas atrações, a cidade é rodeada por águas cristalinas de um azul sem igual, o que nos proporciona diversas praias e ilhas paradisíacas para visitar. Um charme sem igual!",
+    "image": "./paraty.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Visconde de Mauá (RIO DE JANEIRO)",
+    "info": "Visconde de Mauá é um destino de serra que fica estrategicamente localizado: entre São Paulo, Rio de Janeiro e Minas Gerais! Ao todo, são 290 km de distância da capital paulista, ficando a 1.800 metros de altura. O local possui três vilas: Visconde de Mauá, Maringá e Maromba, tendo restaurantes, atrações e ótimas hospedagens em todas elas! Se você busca um lugar sossegado, longe dos agitos das grandes cidades, esse é o destino certo pra você!",
+    "image": "./visconde-de-maua.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Arraial do Cabo (RIO DE JANEIRO)",
+    "info": "Você provavelmente já deve ter ouvido falar em Arraial do Cabo, certo? Se ainda não, você não sabe o que está perdendo. A região paradisíaca, localizada próxima a Cabo Frio, no Rio de Janeiro, atrai turistas e admiradores de uma paisagem de tirar o fôlego. As praias um tanto quanto exóticas e que se assemelham bastante com as praias caribenhas – aquelas de areias brancas e água bem azul – fazem qualquer um ficar de boca aberta, deixando aquele gostinho de 'quero mais'. ",
+    "image": "./arraial-do-cabo.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ilha Grande (RIO DE JANEIRO)",
+    "info": "Se você ainda não conhece Ilha Grande, não sabe o que está perdendo. O local é considerado um verdadeiro paraíso em meio ao mar de Angra dos Reis, no Rio de Janeiro. Por não ser permitido que carros entrem na ilha, o acesso se dá apenas por balsa ou barco – partindo de Angra, o que torna o ambiente ainda mais incrível e charmoso! Muito bem preservada e repleta de animais marinhos, Ilha Grande é o tipo de lugar para se apaixonar e querer voltar várias vezes. Com trilhas, cachoeiras e restaurantes charmosos, o clima rústico e a paisagem de tirar o fôlego vão te surpreender. ",
+    "image": "./ilha-grande.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Lençóis Maranhenses (MARANHÃO)",
+    "info": "O Parque Nacional dos Lençóis Maranhenses é um dos lugares únicos no mundo onde se misturam quilômetros de dunas com lagoas de cor azul que refletem o céu! A paisagem mescla a imensidão dos 100 km de areia (não é à toa que ficou conhecida como o Saara brasileiro) em um cenário que parece ter saído de um filme. É um fenômeno natural raro. Caminhar pelas dunas e admirar a paisagem de lá de cima é algo único e enriquecedor. O mais interessante é que a paisagem muda constantemente por conta dos ventos que moldam as areias e transformam o local. ",
+    "image": "./lencois-maranhenses.webp"
+  },
+  {
+    "id": 9,
+    "name": "Poço Azul (CHAPADA DIAMANTINA)",
+    "info": "Nem só de praia é formada a paisagem da Bahia: no coração do estado está um dos mais belos cenários do país, salpicado de cachoeiras, grutas, cânions e vales. O Parque Nacional da Chapada Diamantina tem atrações para todos os gostos, que se espalham por vilarejos que tiveram seu apogeu no final do século 19, quando a região era famosa somente pelas jazidas de diamantes. Localizado no município de Redenção, o Poço Azul é formado por uma gruta seguida de águas cristalinas e azuladas. A gruta foi tombada pelo Ibama e, em 2005, uma expedição com exploradores de todo o mundo encontrou ossadas de 48 espécies dentro do lago: de preguiça gigante, mamute, hipopótamo, tigre dente de sabre e até duas ossadas humanas de 6 mil anos atrás! É possível praticar snorkelling e mergulhar pelas águas misteriosas do local.",
+    "image": "./chapada-diamantina.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Caraíva (BAHIA)",
+    "info": "Você já deve ter ouvido falar de Caraíva, uma pequena vila de pescadores localizada na Costa do Descobrimento, no litoral da Bahia. O que você provavelmente não sabe é que o lugar - até então desconhecido por grande parte dos turistas - está atraindo cada vez mais fãs, tudo isso por conta de seu charme irresistível, rusticidade e belezas únicas Por lá, a sensação é de que o tempo parou: ruas de areia, pequenas pousadas e restaurantes rústicos embalam o clima praiano que, embora tenha recebido uma certa infraestrutura, não deixou de lado as raízes da pequena vila de pescadores. Parte de sua tranquilidade e calma podem ser explicadas pelo fato de que carros não entram, assim, pequenas canoas e barcos são responsáveis pelo transporte dos turistas e moradores locais.",
+    "image": "./caraiva.webp"
+  },
+  {
+    "id": 11,
+    "name": "Bonito (MATO GROSSO DO SUL)",
+    "info": "Bonito é um verdadeiro paraíso localizado no Mato Grosso do Sul. São inúmeras atividades e roteiros diferenciados perfeitos para quem gosta de ecoturismo. Rios, lagoas cristalinas, grutas, passeios de rapel, mergulho, cachoeiras são alguns dos atrativos dessa cidade espetacular",
+    "image": "./bonito.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Cachoeira Santa Bárbara (CHAPADA DOS VEADEIROS)",
+    "info": "Sem dúvidas, em algum momento da vida você já se deparou com fotos da Chapada dos Veadeiros e - talvez - até sem saber de qual lugar se tratava, se encantou. Sim, esse é o poder que o atrativo turístico, localizado em Goiás, tem; afinal, com tanta beleza e uma energia única, é impossível não ficar apaixonado. Além do visual incrível, a Chapada também oferece uma pegada esotérica, o que é um prato cheio para quem gosta de viagens nesse estilo, tendo em vista que, entre suas belezas naturais, encontram-se dezenas de cachoeiras, muito verde e paredões rochosos. Por se tratar de uma área bem extensa, abrigando diversas cidades menores, muitas vezes é necessário o uso de carros para chegar nos pontos turísticos - uma boa alternativa é combinar os passeios com agências de turismo das cidades, assim dá para curtir tudo sem preocupações.",
+    "image": "./chapada-dos-veadeiros.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Jericoacora (CEARÁ)",
+    "info": "Localizado a 300 km de Fortaleza, Jijoca de Jericoacora, Vila de Jeri ou apenas Jeri se tornou point turístico nos últimos tempos. Suas belezas naturais e o sol o ano inteiro fazem de lá o ambiente aconchegante com ar rústico mais badalado do Brasil – pra você ter uma noção, não existe baixa temporada por lá. Duna do Pôr do Sol, Lagoa do Paraíso e Pedra Furada são algumas as atrações incríveis de Jeri – sem falar no clima calmo e energizante que contagia a todos os visitantes.",
+    "image": "./jeri.webp"
+  },
+  {
+    "id": 14,
+    "name": "Baía do Sancho (FERNANDO DE NORONHA)",
+    "info": "O Arquipélago de Fernando de Noronha, localizado no Estado de Pernambuco, é considerado um dos lugares mais bonitos e preservados do Brasil! Parte desta fama pode ser explicada por suas praias paradisíacas e seu clima tropical o ano inteiro. O destaque fica para Baía do Sancho, que já foi considerada uma das praias mais bonitas do planeta. Com tantas qualidades assim, não tem como não se apaixonar, né?",
+    "image": "./fernando-de-noronha.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Porto de Galinhas (PERNAMBUCO)",
+    "info": "Porto de Galinhas, em Pernambuco, é um daqueles destinos perfeitos para visitar em qualquer época do ano. Com águas cristalinas, praias paradisíacas e sol o ano inteiro, é destino certo para as férias em família, a dois e com os amigos. Até porque, por lá estão alguns dos melhores resorts do Brasil, fator esse que deixa a experiência ainda melhor. Quem conhece Porto de Galinhas, que também é conhecido por suas piscinas naturais em meio ao oceano, garante que é difícil encontrar lugar melhor no mundo",
+    "image": "./porto-de-galinhas.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Vale dos Vinhedos (RIO GRANDE DO SUL)",
+    "info": "No sul do país, a 120 km de Porto Alegre, está localizado o Vale dos Vinhedos. A região, que recebeu os primeiros imigrantes italianos no fim do século XIX, é a principal produtora de vinhos e espumantes do Brasil! São inúmeras vinícolas separadas por três cidades, sendo elas de Bento Gonçalves, Garibaldi e Monte Belo do Sul, formando então a Rota do Vinho. A dica é alugar um carro e percorrer a pequena distância entre as cidades e vinícolas sem pressa, para desfrutar o melhor da incrível serra gaúcha. São muitas opções de restaurantes e hotéis. Além disso, é possível fazer esse roteiro durante o ano todo. ",
+    "image": "./vale-dos-vinhedos.webp"
+  },
+  {
+    "id": 17,
+    "name": "Cataratas do Iguaçu (FOZ DO IGUAÇU)",
+    "info": "O segundo destino turístico que mais atrai estrangeiros no país não está na costa brasileira e nem é uma metrópole de negócios. Com uma população que enche pouco mais que três Maracanãs, a região sul encanta por apresentar aos visitantes uma das molduras naturais mais bonitas do planeta: as Cataratas do Iguaçu. Com 275 quedas d'água - algumas chegam a medir 90 metros de altura - Foz do Iguaçu divide com a vizinha Argentina Puerto Iguazu espetáculo de águas, biodiversidade e esportes radicais.",
+    "image": "./cataratas.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Ilha do Campeche (SANTA CATARINA)",
+    "info": "Sabemos que Florianópolis por si só já é um passeio mais do que obrigatório quando passamos por Santa Catarina. Por lá, além das belíssimas praias, a dica é conhecer a paradisíaca Ilha do Campeche. Sua riqueza é comprovada com o título de Patrimônio Arqueológico e Paisagístico Nacional, sendo a única ilha brasileira a receber essa nomeação! Além de praias espetaculares, a ilha conta com um sítio arqueológico, que pode ser visitado com acompanhamento de guias turísticos.",
+    "image": "./campeche.webp"
+  },
+  {
+    "id": 19,
+    "name": "Cambará do Sul (RIO GRANDE DO SUL)",
+    "info": "Localizada no Rio Grande do Sul, mais precisamente a 980 metros de altura, a cidade de Cambará do Sul se destaca por conta de seu valioso tesouro nacional: imponentes e belíssimos cânions. Cenário de inúmeras novelas brasileiras, o local está caindo no gosto dos turistas que buscam uma viagem incrível em meio a um lugar ainda desconhecido por muitas pessoas. Com parques nacionais, cachoeiras e imensos cânions, a viagem surpreende até os mais céticos. ",
+    "image": "./canion.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Floresta Amazônia",
+    "info": "Provavelmente a Amazônia é um dos últimos lugares que você imaginou passar umas férias, não é? Acontece que o local, praticamente desconhecido pelos turistas, reserva muitas surpresas e lugares incríveis. Para quem gosta de contato com a natureza, o destino é um prato cheio: além de conhecer um dos lugares mais verdes do planeta, é possível saborear deliciosas comidas típicas, mergulhar em praias de água doce e apreciar cenários de tirar o fôlego. ",
+    "image": "./amazonia.webp"
+  }
+]

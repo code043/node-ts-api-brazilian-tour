@@ -1,13 +1,15 @@
 import { RepositoryDatabase } from "../../types/TourType";
 
-export default class InserTour {
+export default class GetTourById {
   constructor(readonly tourRepository: RepositoryDatabase) {}
 
-  async execute(input: Input): Promise<void> {
-    this.tourRepository.insertTour(input);
+  async execute(id: number): Promise<Output> {
+    return this.tourRepository.getTourById(id);
   }
 }
-type Input = {
+
+type Output = {
+  id: number;
   name: string;
   info: string;
   image: string;

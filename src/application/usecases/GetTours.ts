@@ -1,8 +1,7 @@
-import TourRepositoryDatabase from "../../infra/repositories/TourRepositoryDatabase";
-import TourRepositoryInMemory from "../../infra/repositories/TourRepositoryInMemory";
+import { RepositoryDatabase } from "../../types/TourType";
 
 export default class GetTours {
-  constructor(readonly tourRepository: TourRepositoryInMemory) {}
+  constructor(readonly tourRepository: RepositoryDatabase) {}
 
   async execute(): Promise<Output[]> {
     return this.tourRepository.getTours();
