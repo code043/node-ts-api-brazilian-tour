@@ -21,6 +21,7 @@ class TourRepositoryDatabase implements TourRepository {
   }
   async getTours(): Promise<Tour[]> {
     const tours = await prisma.tour.findMany();
+    console.log(tours);
     return tours;
   }
 }
