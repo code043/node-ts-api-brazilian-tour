@@ -1,7 +1,7 @@
-import GetTours from "../application/usecases/GetTours";
-import InserManyTours from "../application/usecases/InsertManytours";
-import { TourDatabase } from "../infra/repositories/TourRepositoryDatabase";
-import { TourMemory } from "../infra/repositories/TourRepositoryInMemory";
+import GetTours from "../src/application/usecases/GetTours";
+import InserManyTours from "../src/application/usecases/InsertManytours";
+import { TourDatabase } from "../src/infra/repositories/TourRepositoryDatabase";
+import { TourMemory } from "../src/infra/repositories/TourRepositoryInMemory";
 
 test("Should insert 2 tours using memory", async () => {
   const database = TourMemory;

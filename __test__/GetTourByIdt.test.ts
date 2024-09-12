@@ -1,7 +1,7 @@
-import GetTourById from "../application/usecases/GetTourById";
-import InserTour from "../application/usecases/InsertTour";
-import { TourDatabase } from "../infra/repositories/TourRepositoryDatabase";
-import { TourMemory } from "../infra/repositories/TourRepositoryInMemory";
+import GetTourById from "../src/application/usecases/GetTourById";
+import InserTour from "../src/application/usecases/InsertTour";
+import { TourDatabase } from "../src/infra/repositories/TourRepositoryDatabase";
+import { TourMemory } from "../src/infra/repositories/TourRepositoryInMemory";
 
 test("Should get tour name by id", async () => {
   const database = TourMemory;

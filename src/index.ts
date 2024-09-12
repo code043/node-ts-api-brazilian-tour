@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-import { routerTours } from "./src/infra/http/express/routes/routes";
+import { routerTours } from "./infra/http/express/routes/routes";
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
